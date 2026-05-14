@@ -1,0 +1,42 @@
+# =========================
+# API & Server
+# =========================
+fastapi==0.110.0
+uvicorn[standard]>=0.30.0
+requests==2.31.0
+email-validator==2.1.1
+
+# =========================
+# Auth & Security
+# =========================
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+bcrypt==4.0.1
+python-multipart==0.0.9
+
+# =========================
+# Data Validation & Config
+# =========================
+pydantic==2.7.1
+python-dotenv==1.0.1
+
+# =========================
+# Event Streaming (Kafka)
+# =========================
+aiokafka==0.10.0
+
+# =========================
+# State Management (Redis)
+# =========================
+redis==5.0.4
+
+# =========================
+# Database (PostgreSQL)
+# =========================
+psycopg2-binary==2.9.9
+
+# =========================
+# Logging & Observability
+# =========================
+loguru==0.7.2
+prometheus-client==0.20.0

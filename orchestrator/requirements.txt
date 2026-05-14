@@ -1,0 +1,20 @@
+# =========================
+# Orchestrator - slim deps
+# =========================
+pydantic==2.7.1
+python-dotenv==1.0.1
+
+# Kafka
+aiokafka==0.10.0
+
+# Redis
+redis==5.0.4
+
+# PostgreSQL
+psycopg2-binary==2.9.9
+
+# Logging
+loguru==0.7.2
+
+# Math
+numpy==1.26.4

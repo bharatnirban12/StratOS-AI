@@ -1,0 +1,74 @@
+# =========================
+# API & Server
+# =========================
+fastapi==0.110.0
+uvicorn[standard]==0.29.0
+
+# =========================
+# Data Validation & Config
+# =========================
+pydantic==2.7.1
+python-dotenv==1.0.1
+
+# =========================
+# LLM & Agent Frameworks
+# =========================
+langgraph
+langchain
+
+# =========================
+# Async & Utilities
+# =========================
+aiohttp==3.9.5
+tenacity==8.2.3
+
+# =========================
+# Event Streaming (Kafka)
+# =========================
+aiokafka==0.10.0
+
+# =========================
+# State Management (Redis)
+# =========================
+redis==5.0.4
+
+# =========================
+# Database (PostgreSQL)
+# =========================
+sqlalchemy==2.0.30
+asyncpg==0.29.0
+
+# =========================
+# Vector DB & Embeddings
+# =========================
+chromadb==0.5.0
+sentence-transformers==3.0.0
+# faiss-cpu==1.7.4   # Uncomment if using FAISS instead
+
+# =========================
+# Logging & Observability
+# =========================
+loguru==0.7.2
+prometheus-client==0.20.0
+opentelemetry-sdk==1.25.0
+
+# =========================
+# Security
+# =========================
+python-jose==3.3.0
+passlib[bcrypt]==1.7.4
+slowapi==0.1.9
+
+# =========================
+# Tooling / Execution
+# =========================
+docker==7.0.0
+
+
+# =========================
+# Optional ML (for ML Agent)
+# =========================
+numpy==1.26.4
+pandas==2.2.2
+scikit-learn==1.4.2
+

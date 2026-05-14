@@ -1,0 +1,62 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Env
+.env
+.env.*
+
+# Virtual env
+myenv/
+
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Docker
+docker-data/
+
+# Streamlit secrets
+.streamlit/secrets.toml
+
+# Local databases
+*.db
+
+# Redis dumps
+dump.rdb
+
+# Kafka local data
+kafka-logs/
+
+# Build
+dist/
+build/
+
+# Pytest
+.pytest_cache/
+
+# Coverage
+.coverage
+htmlcov/
+
+# Streamlit specific
+.streamlit/config.toml
+streamlit.log
+
+# Project specific logs
+logs/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
