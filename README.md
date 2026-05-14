@@ -1,8 +1,8 @@
-# 🧠 StratOS AI: Distributed Multi-Agent Business Simulation Platform
+# StratOS AI: Distributed Multi-Agent Business Simulation Platform
 
 StratOS AI is a high-fidelity, event-driven business simulation platform that utilizes a swarm of specialized AI agents to architect, analyze, and project the lifecycle of a business venture. From technical architecture to SaaS economics and risk assessment, StratOS AI provides venture-grade insights through a resilient, distributed pipeline.
 
-![StratOS AI Dashboard](assets/hero_preview.png)
+StratOS AI Dashboard
 
 ## 📸 Gallery
 
@@ -12,16 +12,16 @@ StratOS AI is a high-fidelity, event-driven business simulation platform that ut
 
 ## 🎬 Product Demo
 
+
+https://github.com/user-attachments/assets/6cb240c2-8f76-49d1-81d3-de56228e2dd8
+
+
 <p align="center">
   <video width="100%" controls>
     <source src="assets/demo_video.webm" type="video/webm">
     Your browser does not support the video tag.
   </video>
 </p>
-
-
-> [!TIP]
-> You can also use a high-quality GIF if you prefer auto-playing demos on the main page.
 
 ## 🚀 Key Features
 
@@ -38,33 +38,10 @@ StratOS AI is a high-fidelity, event-driven business simulation platform that ut
 ---
 
 StratOS AI is built on a modern microservices architecture designed for high throughput and fault tolerance.
-
+### 🛰️ System Flow (Mermaid)
 <p align="center">
   <img src="assets/architecture_diagram.png" width="100%" alt="StratOS AI Architecture Diagram" />
 </p>
-
-### 🛰️ System Flow (Mermaid)
-
-```mermaid
-graph TD
-    User([User]) --> Streamlit[Streamlit Frontend]
-    Streamlit --> Gateway[FastAPI Gateway]
-    
-    subgraph "Event Backbone"
-        Gateway -->|TASK_CREATED| Kafka{Kafka Broker}
-        Kafka -->|Events| Agents[Agent Services]
-        Agents -->|RESULTS| Kafka
-    end
-
-    subgraph "Persistence Layer"
-        Agents --> Postgres[(Postgres DB)]
-        Agents --> Redis[(Redis Cache)]
-        Gateway --> Postgres
-        Gateway --> Redis
-    end
-
-    Agents -->|LLM Requests| OpenRouter[OpenRouter / Claude / GPT-4]
-```
 
 ---
 
@@ -107,18 +84,6 @@ docker-compose up --build
 The platform will be available at:
 - **Frontend**: `http://localhost:8501`
 - **API Gateway**: `http://localhost:8000`
-
----
-
-## 🚢 Deployment Guide
-
-### Production Hardening
-1. **Secrets Management**: Ensure `SECRET_KEY` and database passwords in `.env` are randomized.
-2. **Kafka Tuning**: Adjust `KAFKA_MESSAGE_MAX_BYTES` for large simulation narratives.
-3. **Database**: Use a managed Postgres instance (like AWS RDS or Neon) for production persistence.
-
-### Vercel/Cloud Deployment
-The API Gateway can be deployed to any container registry (Google Cloud Run, AWS Fargate), and the Streamlit frontend can be hosted on Streamlit Cloud or a dedicated VPS.
 
 ---
 
